@@ -1,0 +1,91 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "高校宿舍管理登录"
+			}
+		},
+		{
+			"path": "pages/dormHome/dormHome",
+			"style": {
+				"navigationBarTitleText": "高校宿舍管理首页",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50
+			}
+		},
+		{
+			"path": "pages/studentUser/studentUser",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50
+				
+			}
+		},
+		{
+			"path": "pages/ChargingFee/ChargingFee",
+			"style": {
+				"navigationBarTitleText": "充值电费"
+			}
+		},
+		{
+			"path": "pages/maintenance/maintenance",
+			"style": {
+				"navigationBarTitleText": "上报维修"
+			}
+		},
+		{
+			"path": "pages/paymentHistory/paymentHistory",
+			"style": {
+				"navigationBarTitleText": "缴费记录",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50
+			}
+		},
+		{
+			"path": "pages/maintenanceRecord/maintenanceRecord",
+			"style": {
+				"navigationBarTitleText": "维修记录",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50
+			}
+		},
+		{
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "支付页面"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#0E9489",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/dormHome/dormHome",
+			"iconPath": "static/images/home.png",
+			"selectedIconPath": "static/images/home-copy.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/studentUser/studentUser",
+			"iconPath": "static/images/个人中心.png",
+			"selectedIconPath": "static/images/个人中心-copy.png",
+			"text": "个人中心"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
